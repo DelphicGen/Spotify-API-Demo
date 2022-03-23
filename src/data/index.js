@@ -11,6 +11,16 @@ const data = {
                 name: "Queen",
                 type: "artist",
                 uri: "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
+            },
+            {
+                external_urls: {
+                    spotify: "https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d"
+                },
+                href: "https://api.spotify.com/v1/artists/1dfeR4HaWDbWqFHLkxsg1d",
+                id: "1dfeR4HaWDbWqFHLkxsg1d",
+                name: "Queen2",
+                type: "artist",
+                uri: "spotify:artist:1dfeR4HaWDbWqFHLkxsg1d"
             }
         ],
         external_urls: {

@@ -26,11 +26,6 @@ body {
   padding: 20px;
 }
 
-.app__song-image-container {
-  display: flex;
-  align-items: center;
-}
-
 .app__song-image {
   margin-bottom: 4px;
 }
