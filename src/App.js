@@ -1,12 +1,15 @@
 import './App.css';
+import data from './data'
 import Album from './components/Album/Album';
-import BaseButton from './components/BaseButton';
 
 function App() {
-
   return (
     <div className="app">
-      <Album />
+      {
+        data.map(album => (
+          <Album key={album.id} album={album} />
+        ))
+      }
     </div>
   );
 }

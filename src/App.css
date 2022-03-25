@@ -20,10 +20,16 @@ body {
 }
 
 .app {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app__album {
   border: 2px solid #fff;
   border-radius: 4px;
   margin: 0 8px 20px;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .app__song-image {

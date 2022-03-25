@@ -1,16 +1,15 @@
-import data from '../../data'
 import BaseButton from '../BaseButton'
 import AlbumArtists from './AlbumArtists'
 import AlbumImage from './AlbumImage'
 
-const Album = () => {
+const Album = (props) => {
     return (
-        <>
-            <AlbumImage images={data.album.images} />
-            <h2 className="app__song-title">Title: {data.album.name}</h2>
-            <AlbumArtists artists={data.album.artists} />
+        <div className="app__album">
+            <AlbumImage images={props.album.album.images} />
+            <h2 className="app__song-title">Title: {props.album.album.name}</h2>
+            <AlbumArtists artists={props.album.album.artists} />
             <BaseButton text="Select" />
-        </>
+        </div>
     )
 }
 
