@@ -1,3 +1,4 @@
+import styles from './Album.module.css'
 import { useMemo } from "react";
 
 const AlbumArtists = (props) => {
@@ -11,7 +12,7 @@ const AlbumArtists = (props) => {
     }, []);
 
     return (
-        <p className="app__song-artist">Artist: {getArtistsName}</p>
+        <p className={styles.album__artist}>Artist: {getArtistsName}</p>
     )
 }
 

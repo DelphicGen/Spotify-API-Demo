@@ -1,8 +1,8 @@
-import React from 'react'
+import styles from './BaseButton.module.css'
 
 const BaseButton = (props) => {
     return (
-        <button className="btn">{props.text}</button>
+        <button className={styles.btn} onClick={props.handleButtonClick}>{props.text}</button>
     )
 }
 

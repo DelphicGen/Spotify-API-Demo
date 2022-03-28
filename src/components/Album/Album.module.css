@@ -1,0 +1,17 @@
+.album {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.album__image {
+    margin-bottom: 4px;
+    width: 100%;
+    height: auto;
+}
+
+.album__artist {
+    font-size: 12px;
+    color: #aaa;
+    margin: 8px 0;
+}
