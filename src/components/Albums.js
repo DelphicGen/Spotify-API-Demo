@@ -6,7 +6,7 @@ const Albums = (props) => {
         <div className={styles.albums}>
             {
                 props.albums?.map(album => (
-                    <Album key={album.id} album={album} />
+                    <Album isSelected={props.selectedAlbums.has(album.uri)} toggleSelected={() => props.toggleSelected(album.uri)} key={album.uri} album={album} />
                 ))
             }
         </div>

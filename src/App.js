@@ -8,7 +8,27 @@ import Albums from './components/Albums';
 function App() {
 
   const [albums, setAlbums] = useState([]);
-  
+  const [selectedAlbums, setSelectedAlbums] = useState(new Set());
+
+  const updateData = (newAlbums) => {
+    let temp = [];
+    albums.forEach(album => {
+      if(selectedAlbums.has(album.uri)) {
+        temp.push(album);
+      }
+    });
+    temp.push(...newAlbums);
+    setAlbums(temp);
+  }
+
+  const handleToggleSelected = (uri) => {
+    if(!selectedAlbums.has(uri)) setSelectedAlbums(prevState => new Set([...prevState, uri]));
+    else {
+      const temp = new Set([...selectedAlbums]);
+      temp.delete(uri);
+      setSelectedAlbums(temp);
+    }
+  }
 
   return (
     <div className="app">
@@ -21,9 +41,9 @@ function App() {
         Authorize Yourself
       </a>
 
-      <SearchBar updateData={setAlbums} />
+      <SearchBar updateData={updateData} />
 
-      <Albums albums={albums} />
+      <Albums selectedAlbums={selectedAlbums} toggleSelected={handleToggleSelected} albums={albums} />
     </div>
   );
 }

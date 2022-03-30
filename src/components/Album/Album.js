@@ -9,7 +9,7 @@ const Album = (props) => {
             <AlbumImage images={props.album.album.images} />
             <h2 className="app__song-title">Title: {props.album.album.name}</h2>
             <AlbumArtists artists={props.album.album.artists} />
-            <BaseButton text="Select" />
+            <BaseButton text={props.isSelected ? 'DeSelect' : 'Select'} handleButtonClick={props.toggleSelected} />
         </div>
     )
 }
