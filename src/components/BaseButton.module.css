@@ -9,3 +9,8 @@
   border-bottom-right-radius: 4px;
   font-weight: bold;
 }
+
+.btnDisabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

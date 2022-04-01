@@ -2,6 +2,7 @@ import Album from './Album/Album';
 import styles from './Albums.module.css';
 
 const Albums = (props) => {
+    console.log(props.albums[0])
     return (
         <div className={styles.albums}>
             {

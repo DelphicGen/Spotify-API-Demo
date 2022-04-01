@@ -1,4 +1,4 @@
-.input {
+.textarea {
   border: none;
   background-color: transparent;
   padding: 8px;
@@ -8,9 +8,11 @@
   border-bottom-left-radius: 4px;
   margin-bottom: 8px;
 }
-
+  
 .errorMessage {
   font-size: 12px;
   margin-bottom: 12px;
   color: red;
 }
+  
+  

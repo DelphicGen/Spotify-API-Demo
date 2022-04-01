@@ -1,9 +1,9 @@
-import './App.css';
-import Album from './components/Album/Album';
 import { useState } from 'react';
+import './App.css';
 import Header from './components/Header';
 import SearchBar from './components/SearchBar';
 import Albums from './components/Albums';
+import PlaylistForm from './components/PlaylistForm';
 
 function App() {
 
@@ -42,7 +42,7 @@ function App() {
       </a>
 
       <SearchBar updateData={updateData} />
-
+      <PlaylistForm selectedAlbums={selectedAlbums} />
       <Albums selectedAlbums={selectedAlbums} toggleSelected={handleToggleSelected} albums={albums} />
     </div>
   );

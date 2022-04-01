@@ -17,11 +17,11 @@ const SearchBar = (props) => {
     axios
         .get(`https://api.spotify.com/v1/search?q=${query}&type=track`, {
             headers: {
-                "Authorization": `Bearer ${authToken}`
+              "Authorization": `Bearer ${authToken}`
             }
         })
         .then(res => {
-            props.updateData(res.data.tracks.items)
+          props.updateData(res.data.tracks.items)
         });
   }
 

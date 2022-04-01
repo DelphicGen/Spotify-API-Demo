@@ -1,0 +1,10 @@
+.playListForm {
+    margin: 0 auto 20px;
+    width: 300px;
+}
+
+.playListForm button,
+.playListForm input,
+.playListForm textarea {
+    width: 100%;
+}
